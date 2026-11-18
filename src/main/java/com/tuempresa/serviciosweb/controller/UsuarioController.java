@@ -62,7 +62,7 @@ public class UsuarioController {
     }
 
     @FXML
-    private void ConsultarUsuarios() {
+    private void consultarUsuarios() {
         Task<List<Usuario>> task = new Task<List<Usuario>>() {
             @Override
             protected List<Usuario> call() throws Exception {

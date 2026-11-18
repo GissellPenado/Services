@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="992.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuempresa.serviciosweb.controller.UsuarioController">
    <children>
-      <Button fx:id="btnConsultar" layoutX="23.0" layoutY="62.0" mnemonicParsing="false" text="Consultar usuarios" />
+      <Button fx:id="btnConsultar" layoutX="23.0" layoutY="62.0" mnemonicParsing="false" onAction="#consultarUsuarios" text="Consultar usuarios" />
       <Label layoutX="23.0" layoutY="27.0" text="Consulta de usuarios - API REST">
          <font>
             <Font name="System Bold" size="16.0" />
