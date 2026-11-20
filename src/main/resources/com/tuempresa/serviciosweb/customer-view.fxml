@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="1135.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuempresa.serviciosweb.controller.CustomerController">
+    <children>
+        <Button fx:id="btnConsultarCustomers" layoutX="23.0" layoutY="62.0" mnemonicParsing="false" onAction="#consultarCustomers" text="Consultar customers" />
+        <Label layoutX="23.0" layoutY="27.0" text="Consulta de customers- API REST">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblEstadoCustomers" layoutX="157.0" layoutY="66.0" text="Presione Consultar customers" />
+        <TableView fx:id="tblCustomers" layoutX="23.0" layoutY="117.0" prefHeight="200.0" prefWidth="1089.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="55.199995040893555" text="ID" />
+                <TableColumn fx:id="colNombre" prefWidth="101.40000915527344" text="Nombre" />
+                <TableColumn fx:id="colApellido" prefWidth="112.19999694824219" text="Apellido" />
+                <TableColumn fx:id="colCorreo" prefWidth="248.39999389648438" text="Correo" />
+                <TableColumn fx:id="colTelefono" prefWidth="165.20001220703125" text="Teléfono" />
+                <TableColumn fx:id="colFechaNacimiento" prefWidth="141.20001220703125" text="Fecha de nacimiento" />
+                <TableColumn fx:id="colPais" prefWidth="128.60003662109375" text="País" />
+            <TableColumn fx:id="colCiudad" prefWidth="140.0000244140624" text="Ciudad" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
